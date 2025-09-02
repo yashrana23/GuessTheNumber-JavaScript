@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Guess The Number</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form class="mobile-container">
+        <div class="mobile-camera-section">
+          <span class="camera"> </span>
+          <span class="camera"> </span>
+          <span class="speaker"></span>
+        </div>
+        <div class="mobile-screen-section">
+          <div class="tries">
+            <span class="remaining">10</span>
+          </div>
+          <div class="input-section">
+            <p class="errorMsg"></p>
+            <input
+              type="text"
+              id="userInput"
+              class="userInput"
+              placeholder="Guess a number"
+            />
+          </div>
+          <div class="startOver disabled">
+            <p class="lowOrHi warning"></p>
+            <!-- <p class="lowOrHi danger">THE NUMBER IS 23, YOU LOST!</p> -->
+            <!-- <p class="lowOrHi success">YOU WON IN 10 TRIES!</p> -->
+            <!-- <div class="play-again">
+              <button id="newGame">
+                <i class="ri-play-circle-line"></i>
+                <span>PLAY AGAIN</span>
+              </button>
+            </div> -->
+          </div>
+          <div class="guesses-section disabled">
+            <h3>HINTS</h3>
+            <div class="guesses">
+              <!-- <span>1</span>
+              <span>22</span>
+              <span>33</span>
+              <span>14</span>
+              <span>67</span>
+              <span>100</span>
+              <span>100</span>
+              <span>23</span> -->
+            </div>
+          </div>
+        </div>
+        <div class="mobile-navigation-section">
+          <input type="submit" id="check" value="CHECK" class="guessSubmit" />
+        </div>
+      </form>
+      <div class="game-info">
+        <h1>Guess The Number</h1>
+        <ul>
+          <li>Try and guess a random number between 1 and 100.</li>
+          <li>You have 10 attempts to guess the right number.</li>
+          <li>Use the keyboard to enter your guess and press check.</li>
+        </ul>
+      </div>
+    </main>
+    <script src="script.js "></script>
+  </body>
+</html>
