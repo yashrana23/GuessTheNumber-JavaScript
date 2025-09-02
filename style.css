@@ -303,6 +303,10 @@ main {
     border-width: 3px;
   }
 
+  #newGame:hover {
+    border-width: 3px;
+  }
+
   #newGame i {
     font-size: 2.45rem;
   }
